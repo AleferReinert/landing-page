@@ -7,7 +7,7 @@ You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-qu
 ### Install
 
 ```
-$ git clone https://github.com/guilouro/simple-nextjs-quick-start.git
+$ git clone https://github.com/AleferReinert/landing-page.git
 
 $ yarn install
 ```
