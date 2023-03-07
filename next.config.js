@@ -1,9 +1,21 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  disable: process.env.NODE_ENV === 'development'
-})
+// next.config.js
+const withPlugins = require('next-compose-plugins')
+const optimizedImages = require('next-optimized-images')
 
-module.exports = withPWA({
-  reactStrictMode: true
-})
+const nextConfig = {
+  images: {
+    formats: ['image/webp']
+  }
+}
+
+module.exports = withPlugins(
+  [
+    [
+      optimizedImages,
+      {
+        /* config for next-optimized-images */
+      }
+    ]
+  ],
+  nextConfig
+)
