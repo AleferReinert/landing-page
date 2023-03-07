@@ -27,7 +27,7 @@ export const Container = styled.div`
   `}
 `
 
-export const Image = styled.picture`
+export const Image = styled.img`
   max-width: 100%;
 
   img {

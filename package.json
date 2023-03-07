@@ -12,6 +12,7 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.21.0",
     "@next/font": "13.1.6",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
