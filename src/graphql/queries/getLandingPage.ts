@@ -89,6 +89,19 @@ const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment pricingBox on LandingPage {
+    pricingBox {
+      totalPrice
+      numberInstallments
+      priceInstallment
+      benefits
+      button {
+        label
+        url
+      }
+    }
+  }
+
   query {
     landingPage {
       data {
@@ -100,6 +113,7 @@ const GET_LANDING_PAGE = gql`
           ...sectionConcepts
           ...sectionModules
           ...sectionAgenda
+          ...pricingBox
         }
       }
     }
