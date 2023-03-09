@@ -71,6 +71,17 @@ const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment sectionModules on LandingPage {
+    sectionModules {
+      title
+      modules {
+        title
+        subtitle
+        description
+      }
+    }
+  }
+
   query {
     landingPage {
       data {
@@ -80,6 +91,7 @@ const GET_LANDING_PAGE = gql`
           ...sectionAboutProject
           ...sectionTech
           ...sectionConcepts
+          ...sectionModules
         }
       }
     }
