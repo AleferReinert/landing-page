@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request'
 
-const GET_LANDIND_PAGE = gql`
-  query GET_LANDING_PAGE {
+const GET_LANDING_PAGE = gql`
+  query {
     landingPage {
       data {
         attributes {
@@ -19,4 +19,4 @@ const GET_LANDIND_PAGE = gql`
   }
 `
 
-export default GET_LANDIND_PAGE
+export default GET_LANDING_PAGE

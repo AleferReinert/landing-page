@@ -37,7 +37,7 @@ const ProfileCard: React.FC<Props> = ({
       {socialLinks.map((item) => (
         <S.Link key={item.link}>
           <a href={item.link} title={item.slug}>
-            {icons[item.slug]}
+            {icons[item.slug as keyof typeof icons]}
           </a>
         </S.Link>
       ))}
