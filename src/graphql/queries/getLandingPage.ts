@@ -31,12 +31,45 @@ const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment sectionAboutProject on LandingPage {
+    sectionAboutProject {
+      title
+      description
+      image {
+        data {
+          attributes {
+            alternativeText
+            url
+          }
+        }
+      }
+    }
+  }
+
+  fragment sectionTech on LandingPage {
+    sectionTech {
+      title
+      techIcons {
+        name
+        logo {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+
   query {
     landingPage {
       data {
         attributes {
           ...logo
           ...header
+          ...sectionAboutProject
+          ...sectionTech
         }
       }
     }
