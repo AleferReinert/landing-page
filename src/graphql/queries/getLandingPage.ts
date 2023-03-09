@@ -146,6 +146,16 @@ const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment sectionFaq on LandingPage {
+    sectionFaq {
+      title
+      questions {
+        question
+        answer
+      }
+    }
+  }
+
   query {
     landingPage {
       data {
@@ -160,6 +170,7 @@ const GET_LANDING_PAGE = gql`
           ...pricingBox
           ...sectionAboutUs
           ...sectionReviews
+          ...sectionFaq
         }
       }
     }
