@@ -1,30 +1,34 @@
-// landing-page.data.attributes.logo.data.attributes 
-export type LogoAttributesProps = {
-    alternativeText: string
-    url: string
-}
-
-// landing-page.data.attributes.logo.data
-export type LogoDataProps = {
-    attributes: LogoAttributesProps
-}
-
-// landing-page.data.attributes.logo
 export type LogoProps = {
-    data: LogoDataProps
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
 }
 
-// landing-page.data.attributes
-export type LandingPageAttributesProps = {
-  logo: LogoProps
+export type HeaderProps = {
+    title: string
+    description: string
+    image: {
+      data: {
+        attributes: {
+          url: string
+          alternativeText: string
+        }
+      }
+    }
+    button?: {
+      label: string
+      url: string
+    }
 }
 
-// landing-page.data
-export type LandingPageDataProps = {
-    attributes: LandingPageAttributesProps
-}
-
-// landing-page
 export type LandingPageProps = {
-  data: LandingPageDataProps
-}
+    data: {
+        attributes: {
+            logo: LogoProps
+            header: HeaderProps
+        }
+    }
+} 
