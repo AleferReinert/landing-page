@@ -9,6 +9,7 @@
     "lint": "eslint src --max-warnings=0",
     "test": "jest --passWithNoTests",
     "test:watch": "yarn test --watch",
+    "deploy": "yarn build && next export",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
   },
   "dependencies": {
