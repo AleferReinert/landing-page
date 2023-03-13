@@ -1,5 +1,5 @@
 import React from 'react'
-import { LogoProps } from 'types/api'
+import { Image } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 import * as S from './styles'
 
@@ -7,7 +7,7 @@ const Logo = ({
   data: {
     attributes: { alternativeText, url }
   }
-}: LogoProps) => (
+}: Image) => (
   <>
     <S.LogoWrapper src={getImageUrl(url)} alt={alternativeText} />
   </>
