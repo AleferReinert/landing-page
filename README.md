@@ -1,39 +1,24 @@
-# Simple NextJS Quick Start
+# Landing Page
 
-A simple project starter to work with React, NextJS and Styled Components
+Esse projeto faz parte do curso "React Avançado: Crie aplicações com NextJS, Strapi e mais".
 
-You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-quickstart.now.sh/)
+Netlify: [https://landing-page-ar.netlify.app](https://landing-page-ar.netlify.app)
 
-### Install
+## Desenvolvimento
+Após clonar o projeto, instale as dependências:
 
 ```
-$ git clone https://github.com/AleferReinert/landing-page.git
-
-$ yarn install
+yarn install
 ```
 
-### How to use
+E rode usando:
 
-Runs next which starts Next.js in development mode
-
-```bash
-$ yarn dev
+```
+yarn dev
 ```
 
-Runs next build which builds the application for production usage
+## Produção
 
-```bash
-$ yarn build
 ```
-
-Runs next start which starts a Next.js production server
-
-```bash
-$ yarn start
-```
-
-Runs next build and export which exports a files in a `out` folder to deploy
-
-```bash
-$ yarn deploy
+yarn build
 ```
